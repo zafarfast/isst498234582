@@ -1,6 +1,6 @@
 import requests #import requests module
 from twilio.rest import Client #import twilio Client module
-
+import timer
 
 # Find your Account SID and Auth Token at twilio.com/console
 # and set the environment variables. See http://twil.io/secure
@@ -25,17 +25,20 @@ data = requests.get("http://api.open-notify.org/iss-now.json").json()
 iss_latitude = float(data["iss_position"]["latitude"])
 iss_longitude = float(data["iss_position"]["longitude"])
 
-
-# Check if the ISS station is within the range
-if  (MY_LATITUDE - accuracy <= iss_latitude <= MY_LATITUDE + accuracy) and (MY_LONGITUDE - accuracy <= iss_longitude <= MY_LONGITUDE + accuracy):
-    print("ISS is over the user")
-    #Notify the user by sending SMS
-    message = client.messages \
-    .create(
-         body='ISS is above you, Look Up!',
-         from_= TWILIO_ACCOUNT_MOBILE_NUMBER,
-         to= USER_PHONE_NUMBER
-     )
+#Run the program in infinite loop
+while True:
+    #Wait 5 secs
+    timer.sleep(5)
+    # Check if the ISS station is within the range
+    if  (MY_LATITUDE - accuracy <= iss_latitude <= MY_LATITUDE + accuracy) and (MY_LONGITUDE - accuracy <= iss_longitude <= MY_LONGITUDE + accuracy):
+        print("ISS is over the user")
+        #Notify the user by sending SMS
+        message = client.messages \
+        .create(
+            body='ISS is above you, Look Up!',
+            from_= TWILIO_ACCOUNT_MOBILE_NUMBER,
+            to= USER_PHONE_NUMBER
+        )
 
 
 
