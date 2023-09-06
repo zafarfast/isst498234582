@@ -23,15 +23,21 @@ When the ISS is above the user's location (within a certain threshold), the prog
 https://github.com/zafarfast/isst498234582
 
 ## Technologies used:
-- Requests
-- Twilio
-
+- Requests module
+- Twilio module
+- Twilio account
 
 ## Pre-requisites
 
 - Twilio account: To run the program you will need Account SID and Auth Token. This can be obtained by registering with Twilio at https://www.twilio.com/try-twilio
 
 - Location co-ordinates: You can obtain the co-ordiantes of you location on Google map.  A details guide can be found here > https://www.howtogeek.com/689097/how-to-get-latitude-and-longitude-coordinates-from-google-maps/
+
+## How to use
+
+Once you have the Account SID, Auth Token and Twilio mobile number, put it in the main.py file and run. 
+
+NOTE: The Account SID, Auth Token and Twilio mobile number in the main.py file are not valid so it won't work unless you replace them with your own account.
 
 ## Screenshots
 
