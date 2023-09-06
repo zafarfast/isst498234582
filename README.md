@@ -35,6 +35,6 @@ https://github.com/zafarfast/isst498234582
 
 ## Screenshots
 
-![alt text](./images/screenshot.png)
+![alt text](notification_screenshot.jpeg)
 
 
