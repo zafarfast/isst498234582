@@ -6,6 +6,7 @@
 - GitGub Link
 - Technologies used
 - Pre-requisites
+- How to use
 - Screenshots
 
 
@@ -38,6 +39,16 @@ https://github.com/zafarfast/isst498234582
 Once you have the Account SID, Auth Token and Twilio mobile number, put it in the main.py file and run. 
 
 NOTE: The Account SID, Auth Token and Twilio mobile number in the main.py file are not valid so it won't work unless you replace them with your own account.
+
+## How to run
+
+This program is made to run continously so that it can keep monitoring ISS's location. Running it on the personal computer is not practical and therefore it needs to be run on the cloud or cloud based IDE such as PythonAnywhere.
+
+PythonAnywhere is an online platform and cloud-based Integrated Development Environment (IDE) designed specifically for Python programming and web hosting. It allows Python developers to write, run, and host Python applications, websites, and web apps in a browser-based environment. 
+
+You can create a free acconut here > https://www.pythonanywhere.com/registration/register/beginner/
+
+Here is how you can deploy your app on PythonAnywhere > https://www.youtube.com/watch?v=wbAhmGFwZ-g
 
 ## Screenshots
 
